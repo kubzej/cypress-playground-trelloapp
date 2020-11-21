@@ -1,7 +1,7 @@
 {
-  "name": "trelloapp",
+  "name": "cypress-workspace-trelloapp",
   "version": "1.0.0",
-  "author": "Filip Hric",
+  "author": "Jakub Mares",
   "license": "ISC",
   "scripts": {
     "start": "node index.js"
@@ -13,8 +13,10 @@
     "axios": "^0.19.2",
     "connect-busboy": "0.0.2",
     "connect-history-api-fallback": "^1.6.0",
+    "cypress": "^5.6.0",
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-vue": "^6.2.2",
     "fs-extra": "^9.0.1",
@@ -30,6 +32,7 @@
     "sass": "^1.26.8",
     "sendmail": "^1.6.1",
     "socket.io": "^2.3.0",
+    "typescript": "^4.1.2",
     "vue": "^2.6.11",
     "vue-focus": "^0.1.1",
     "vue-router": "^3.3.2",
