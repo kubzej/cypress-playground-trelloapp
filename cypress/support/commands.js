@@ -28,3 +28,6 @@ Cypress.Commands.add('getDataCy', (input) => {
     cy.get(`[data-cy=${input}]`)
   })
   
+Cypress.Commands.add('cleanDB', () => {
+  cy.request('DELETE', '/boards')
+})

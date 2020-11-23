@@ -3,6 +3,7 @@ import { onHomepage } from "../../support/page_objects/homepage"
 describe('tests made with page objects', () => {
     
     beforeEach(() => {
+        cy.cleanDB()
         cy.visit('/')
     })
 
