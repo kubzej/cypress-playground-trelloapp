@@ -31,3 +31,15 @@ Cypress.Commands.add('getDataCy', (input) => {
 Cypress.Commands.add('cleanDB', () => {
   cy.request('DELETE', '/boards')
 })
+
+Cypress.Commands.add('createBoard', (name) => {
+  cy.get('[data-cy="create-board"] input').type(`${name}` + '{enter}', {force: true})
+})
+
+Cypress.Commands.add('createList', (name) => {
+  cy.get('.CreateList_input').type(name + '{enter}', {force: true})
+})
+
+Cypress.Commands.add('createTask', (name) => {
+  cy.get('[data-id="newTaskTitle"]').type(name + '{enter}', {force: true})
+})
