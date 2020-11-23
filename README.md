@@ -1,4 +1,4 @@
-# Cypress workspace using Trelo App
+# Cypress playground using Trelo App
 
 This repository is only used to learn the Cypress framework.
 
