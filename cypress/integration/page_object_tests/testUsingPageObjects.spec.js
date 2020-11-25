@@ -9,12 +9,12 @@ describe('tests made with page objects', () => {
         cy.visit('/')
     })
 
-    it('should create new board', () => {
+    it('creates new board', () => {
         onHomepage.createNewBoard('Testing board')
         cy.get('.boardDetail_title').should('have.value', 'Testing board')
     })
 
-    it('should create base lists to board', () => {
+    it('creates base lists to board', () => {
         cy.createBoard('Testing board')
         var namesOfLists = ['TO DO', 'IN PROGRESS', 'DONE'] 
         var name
@@ -25,7 +25,7 @@ describe('tests made with page objects', () => {
         }
     })
 
-    it('should remove all lists from board', () => {
+    it('removes all lists from board', () => {
         cy.createBoard('Testing board')
         for (var i=0; i < 3; i++) {
             cy.createList('Testing list')
@@ -35,7 +35,7 @@ describe('tests made with page objects', () => {
 
     })
 
-    it.only('changes description and date of task', () => {
+    it('changes description and date of task', () => {
         cy.createBoard('Testing board')
         cy.createList('Testing list')
         cy.createTask('Testing task')
