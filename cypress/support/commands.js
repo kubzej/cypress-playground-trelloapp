@@ -43,3 +43,13 @@ Cypress.Commands.add('createList', (name) => {
 Cypress.Commands.add('createTask', (name) => {
   cy.get('[data-id="newTaskTitle"]').type(name + '{enter}', {force: true})
 })
+
+Cypress.Commands.add('signUp', () => {
+  cy.request('POST', '/signup', {
+    "email": "test@test.com",
+    "password": "password"
+  }).then(req => {
+    cy.setCookie('trello_token', req.body.accessToken)
+    cy.setCookie('is_user_registered', 'yes')
+  })
+})
