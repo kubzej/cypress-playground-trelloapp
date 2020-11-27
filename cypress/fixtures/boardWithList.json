@@ -1,0 +1,28 @@
+{
+    "name": "Testing Board",
+    "user": 0,
+    "id": 0,
+    "starred": false,
+    "created": "2020-11-27",
+    "lists": [
+      {
+        "boardId": 0,
+        "title": "List 1",
+        "id": 22860429193,
+        "created": "2020-11-27"
+      },
+      {
+        "boardId": 0,
+        "title": "List 2",
+        "id": 22860429193,
+        "created": "2020-11-27"
+      },
+      {
+        "boardId": 0,
+        "title": "List 3",
+        "id": 22860429193,
+        "created": "2020-11-27"
+      }
+    ],
+    "tasks": []
+  }

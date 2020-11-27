@@ -1,7 +1,7 @@
 {
   "name": "cypress-workspace-trelloapp",
   "version": "1.0.0",
-  "author": "Jakub Mares",
+  "author": "Filip Hric",
   "license": "ISC",
   "scripts": {
     "start": "node index.js"

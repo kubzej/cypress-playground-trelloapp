@@ -41,4 +41,26 @@ describe('tests using stubbing', () => {
             
         })
     })
+
+    it('stubs request with delay and board is visible later', () => {
+        cy.intercept('POST', '/api/boards', {delayMs: 5000}).as('newBoard')
+        cy.createBoard('Testing Board')
+        cy.wait('@newBoard')
+        cy.get('.boardDetail').should('exist')
+    })
+
+    it('waits for request using RouteMatcher', () => {
+        cy.intercept({
+            method: 'POST',
+            url: '/api/boards',
+            statusCode: 201,
+            headers: {
+              'Host': 'localhost:3000',
+              'Content-Type': 'application/json;charset=UTF-8'
+            }
+        }).as('newBoard')
+
+        cy.createBoard('AAA')
+        cy.wait('@newBoard')
+    })
 })
