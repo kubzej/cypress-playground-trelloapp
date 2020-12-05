@@ -10,7 +10,10 @@
     "cy-different-viewport": "cypress run --config viewportWidth=375,viewportHeight=812 --headed",
     "cy-only-one-auth-test": "cypress run --spec 'cypress/integration/authentication/authenticationByRequest.spec.js/'",
     "cy-all-auth-tests": "cypress run --spec 'cypress/integration/authentication/**'",
-    "cy-e2e": "start-server-and-test start http://localhost:3000 cy-all"
+    "cy-e2e": "start-server-and-test start http://localhost:3000 cy-all",
+    "cy-dashboard-spec-only": "cypress run --spec 'cypress/integration/others/selectors.spec.js/' --headless --record --key 90bcc05a-feec-4659-ad1d-d618dbe0c6a5",
+    "cy-dashboard-spec-with-tag": "cypress run --spec 'cypress/integration/others/selectors.spec.js/' --headless --record --key 90bcc05a-feec-4659-ad1d-d618dbe0c6a5 --tag 'trello'",
+    "cy-parallel": "npm run cy-dashboard-spec-only -- --browser firefox --group Firefox --ci-build-id 1 & npm run cy-dashboard-spec-only -- --browser chrome --group Chrome --ci-build-id 1"
   },
   "browser": {
     "vue": "vue/dist/vue.common.js"
