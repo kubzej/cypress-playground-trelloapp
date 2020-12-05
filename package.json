@@ -4,7 +4,13 @@
   "author": "Filip Hric",
   "license": "ISC",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "cy-all": "npx cypress run",
+    "cy-only-chrome": "cypress run --browser chrome",
+    "cy-different-viewport": "cypress run --config viewportWidth=375,viewportHeight=812 --headed",
+    "cy-only-one-auth-test": "cypress run --spec 'cypress/integration/authentication/authenticationByRequest.spec.js/'",
+    "cy-all-auth-tests": "cypress run --spec 'cypress/integration/authentication/**'",
+    "cy-e2e": "start-server-and-test start http://localhost:3000 cy-all"
   },
   "browser": {
     "vue": "vue/dist/vue.common.js"
@@ -39,5 +45,8 @@
     "vue-socket.io-extended": "^4.0.4",
     "vue2-dropzone": "^3.6.0",
     "vuedraggable": "^2.23.2"
+  },
+  "dependencies": {
+    "start-server-and-test": "^1.11.6"
   }
 }
