@@ -11,4 +11,8 @@ describe('other tests', () => {
     }, () => {
         cy.get('XXX')
     })
+
+    it('it tries to to get item with 10s timeout', () => {
+        cy.get('XXX', {timeout: 10000})
+    })
 })
