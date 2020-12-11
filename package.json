@@ -19,10 +19,12 @@
     "vue": "vue/dist/vue.common.js"
   },
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^1.4.0",
     "axios": "^0.19.2",
     "connect-busboy": "0.0.2",
     "connect-history-api-fallback": "^1.6.0",
     "cypress": "^6.0.0",
+    "cypress-file-upload": "^4.1.1",
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-cypress": "^2.11.2",
@@ -50,6 +52,7 @@
     "vuedraggable": "^2.23.2"
   },
   "dependencies": {
+    "cypress-real-events": "^1.1.0",
     "start-server-and-test": "^1.11.6"
   }
 }
