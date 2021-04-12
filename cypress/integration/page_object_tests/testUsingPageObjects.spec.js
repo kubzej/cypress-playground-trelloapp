@@ -44,7 +44,7 @@ describe('tests made with page objects', () => {
 
             // change and check of description
             const description = 'This is description'
-            onTask.changeDescription(description)
+            onTask.changeDescrxiption(description)
             cy.get('.TaskModule_description').should('contain', description)
             
             // change and check of date

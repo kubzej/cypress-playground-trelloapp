@@ -1,18 +1,18 @@
 {
   "boards": [
     {
-      "name": "AAA",
+      "name": "XXX Board",
       "user": 0,
-      "id": 781250832,
+      "id": 83924107343,
       "starred": false,
-      "created": "2020-12-05"
+      "created": "2021-04-12"
     }
   ],
   "tasks": [],
   "users": [
     {
       "email": "test@test.com",
-      "password": "$2a$10$YmECa6wo64Z6NTF11tMKd.wLPc/rnnajDwjFZsgAGZrr8H5ulB/ma",
+      "password": "$2a$10$QOl8VhimOErImTo29FFIO.wc1HosoJDUyzJ.A9kpwRGuBMX7i/Yi.",
       "id": 1
     }
   ],
