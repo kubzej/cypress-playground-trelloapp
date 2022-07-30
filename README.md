@@ -8,3 +8,5 @@ The original version of this app was built by [Zack Thoutt](https://github.com/z
 Installation -> `npm install`
 
 Running the app on localhost -> `npm start`
+
+Test
